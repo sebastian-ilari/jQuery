@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<link rel="stylesheet" href="05 - lesson05.css">
+</head>
+<body>
+
+<dl id="existencialAccordion">
+	<dt>What is the meaning of life?</dt>
+	<dd>I still don't know</dd>
+	<dt>What is the meaning of life?</dt>
+	<dd>I still don't know</dd>
+	<dt>What is the meaning of life?</dt>
+	<dd>I still don't know</dd>
+	<dt>What is the meaning of life?</dt>
+	<dd>I still don't know</dd>
+	<dt>What is the meaning of life?</dt>
+	<dd>I still don't know</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: a little more on selectors and events
+
+	*/
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').hide();
+
+	$('dl#existencialAccordion').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	})
+
+
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+
+		img
+		{
+			width: 300px;
+			height: 200px;
+		}
+
+	</style>
+
+	<script id="template" type="type/anyType">
+		<h3> {{title}} </h3>
+		<img src={{thumbnail}} alt={{title}}/>
+	</script>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: use of the each utility to replace keywords from a template for each element of an array
+
+	*/
+
+	(function() {
+		
+		var content = [
+			{
+				title: 'El tiempo no existe',
+				thumbnail: 'http://agenciaeternity.files.wordpress.com/2013/10/20131026-112906.jpg',
+			},
+			{
+				title: 'La caida del imperio americano',
+				thumbnail: 'http://agenciaeternity.files.wordpress.com/2013/10/20131018-120947.jpg',
+			},
+			{
+				title: 'Hallan un planeta solitario',
+				thumbnail: 'http://agenciaeternity.files.wordpress.com/2013/10/20131011-010838.jpg',
+			},
+		],
+			template = $.trim($('#template').html()),
+			fragment = '';
+
+			console.log(template);
+
+
+		$.each(content, function(index, obj) {
+			fragment += 
+				template.replace(/{{title}}/ig, obj.title)
+						.replace(/{{thumbnail}}/ig, obj.thumbnail);
+		});
+
+		$('body').append(fragment);
+
+	})();
+
+</script>
+</body>
+</html>

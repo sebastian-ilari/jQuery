@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<h2>Don't dare to click me</h2>
+	<h2>Don't dare to click me</h2>
+	<h2>Don't dare to click me</h2>
+	<h2>Don't dare to click me</h2>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: there are several deprecated methods to attach an event to an element (bind, delegate, live, etc) or aliases like .click, but we should use on('event').
+
+	The true parameter on the clone method makes the event handlers to be cloned too.
+
+	*/
+
+(function() {
+	
+	$('h2').on('click', function() {
+		console.log('He clicked me!');
+		$(this).clone(true).appendTo('.container');
+	});
+
+})();
+
+</script>
+</body>
+</html>

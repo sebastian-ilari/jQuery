@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<style type="text/css">
+		ul li
+		{
+			color: red;
+		}
+
+		.selected
+		{
+			color: green;
+		}
+	</style>
+
+	<script>
+
+	/*
+	
+	EXPLANATION: how to execute something AFTER all the DOM elements have been rendered
+
+	*/
+
+	// Short version
+	$(function() {
+		$('li:first-child').addClass('selected');
+	});
+
+	// Long version
+	$(document).ready(function() {
+		$('li:first-child').addClass('selected');
+	});
+
+	</script>
+</head>
+<body>
+
+<ul>
+	<li>Apple</li>
+	<li>Pear</li>
+	<li>Peach</li>
+</ul>
+
+</body>
+</html>

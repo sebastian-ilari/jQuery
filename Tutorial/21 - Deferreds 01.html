@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+
+
+	</style>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+/*
+
+EXPLANATION: first use of deferreds with a setTimeOut
+
+*/
+
+var myVar;
+
+var setVal = function() {
+	var deferred = $.Deferred();
+
+	setTimeout(function() {
+		myVar = 'Ring!!!';
+		deferred.resolve();
+		//deferred.reject();
+	}, 2000);
+
+	return deferred.promise();
+};
+
+/*
+// When deferred succeeds
+setVal().done(function() { });
+// When deferred fails
+setVal().fail(function() { });
+// Always
+setVal().always(function() { });
+*/
+
+setVal().then(
+	// When deferred succeeds
+	function() {
+		console.log('Wake up with this: ' + myVar);
+	},
+	// When deferred fails
+	function() {
+		console.log('The alarm failed')
+	}
+);
+
+</script>
+</body>
+</html>

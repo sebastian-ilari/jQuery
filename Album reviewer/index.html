@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>
+		Album Reviewer
+	</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.1.2.js"></script>
+
+<script id="artistTemplate" type="text/x-handlebars-template">
+	{{#each this}}
+	<li data-artist-id={{ArtistId}}>
+		<div class="artist" data-id="artist">
+			{{Name}}
+		</div>
+		<div class="albumsContainer" data-id="albumsContainer"></div>
+	</li>
+	{{/each}}
+</script>
+
+<script id="albumTemplate" type="text/x-handlebars-template">
+	{{#each this}}
+		<div class="album" data-id="album" data-album-id="{{AlbumId}}">
+			<div class="albumTitle">
+				Album: {{Title}}
+			</div>
+			<div class="infoContainer">
+				<div class="genre">
+					Genre: <span class="genreValue">{{Genre}}</span>
+				</div>
+				<div class="price">
+					Price: <span class="priceValue">{{Price}}</span>
+				</div>
+			</div>
+			<div class="starsContainer" data-id="starsContainer">
+				<img data-position="1" data-album-id="{{AlbumId}}" src="images/star-off.png" />
+				<img data-position="2" data-album-id="{{AlbumId}}" src="images/star-off.png" />
+				<img data-position="3" data-album-id="{{AlbumId}}" src="images/star-off.png" />
+				<img data-position="4" data-album-id="{{AlbumId}}" src="images/star-off.png" />
+				<img data-position="5" data-album-id="{{AlbumId}}" src="images/star-off.png" />
+				<div class="ratingDetails">
+					Ratings: <span class="cantRatings" data-id="cantRatings">{{CantRatings}}</span>
+					</br>
+					Average: <span class="averageRating" data-id="averageRating">{{AverageRating}}</span>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>
+
+<div class="container">
+	<div class="title">
+		Album Reviewer
+	</div>
+
+	<ul id="artistsContainer">
+
+	</ul>
+</div>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>

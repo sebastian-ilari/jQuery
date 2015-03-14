@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+		.box {
+			height: 200px;
+			width: 200px;
+			background: lightgreen;
+			display: inline-block;
+			margin-right: 20px;
+		}
+
+		#result {
+			font-weight: bold;
+			font-size: 24px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+
+	<span id="result"></span>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+/*
+
+EXPLANATION: use of Deferred and animations
+
+*/
+
+$('div.box').each(function(i) {
+	$(this).delay( 1000 * i++ ).fadeOut(1000);
+}).promise().done(function() {
+	$('span#result').text('Done!');
+});
+
+</script>
+</body>
+</html>

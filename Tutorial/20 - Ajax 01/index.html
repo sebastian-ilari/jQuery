@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>AJAX: load</title>
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li><a class="local" href="20about.html">About</a></li>
+		<li><a class="local" href="20contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+<div class="wrap"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+/*
+
+EXPLANATION: Async calls to load pages without making a postback
+
+This page has to be run from a server to work, use the Python server from the Terminal
+
+*/
+
+(function() {
+	var wrap = $('div.wrap');
+
+	$('a.local').on('click', function( e ) {
+		var href = $(this).attr('href');
+
+		wrap.load( href + ' .container' );
+
+		e.preventDefault();
+	});
+
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+
+
+	</style>
+</head>
+<body>
+
+
+<div id="container">
+	Container
+	<div id="inside">
+		Inside
+	</div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: use of the call Javascript function. The parameter indicates what will $(this) represent inside the function.
+
+	Done it with two different structures: the procedural one and an object with functions, the logic is the same.
+
+	*/
+
+	(function() {
+
+		var testBlock = {
+
+			init: function() {
+				$('<h2></h2>', {
+					text: 'Click me'
+				})
+					.insertAfter('div#container')
+					.on('click', function() {
+						testBlock.test.call($('#inside'));
+					})
+			},
+
+			test: function() {
+				console.log($(this))
+			}
+		};
+
+		testBlock.init();
+
+/*
+		$('<h2></h2>', {
+			text: 'Click me'
+		})
+			.insertAfter('div#container')
+			.on('click', function() {
+				test.call($('#inside'));
+			})
+
+		function test() {
+		 	console.log($(this));
+		}
+*/	
+
+	})();
+
+</script>
+</body>
+</html>

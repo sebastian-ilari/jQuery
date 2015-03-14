@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+
+	.box {
+		width: 50px;
+		height: 50px;
+		background: lightgreen;
+		margin: 10px;
+	}
+
+	</style>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: Simple example of inheriting behaviour through functions defined in the prototype of a class
+
+	*/
+
+	function BoxCreator(cssClass) {
+		this.cssClass = cssClass;
+	}
+
+	BoxCreator.prototype.createBox = function() {
+		$('<div></div>', {
+			class: this.cssClass
+		}).appendTo( 'body' );
+	};
+
+	var aBoxCreator = new BoxCreator("box");
+	aBoxCreator.createBox();
+
+	var anotherBoxCreator = new BoxCreator("box");
+	anotherBoxCreator.createBox();
+
+
+</script>
+</body>
+</html>

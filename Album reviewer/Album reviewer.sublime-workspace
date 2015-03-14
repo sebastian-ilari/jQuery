@@ -1,0 +1,315 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"alb",
+				"albumError"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"albums",
+				"albumsContainer"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"album",
+				"albumTitle"
+			],
+			[
+				"show",
+				"showAlbums"
+			],
+			[
+				"albu",
+				"albumsAreLoaded"
+			],
+			[
+				"get",
+				"getAlbums"
+			],
+			[
+				"aja",
+				"ajaxResult"
+			],
+			[
+				"ar",
+				"artistsContainer"
+			],
+			[
+				"artist",
+				"artistTemplate"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"css",
+				"cssClass"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/index.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/js/scripts.js",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/js/handlebarsSetup.js",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/static.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/css/stylesStatic.css",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/css/styles.css",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/ajax.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/templates/artist.js",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/templates/album.handlebars",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/templates/artist.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Album reviewer/css/styles",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/13 - Custom effect.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/00 - Template lesson.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/01 - Intro.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/02 - Execution order.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/03 - Selecting elements.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/04 - Listening to events.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/05 - Selectors and events.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/06 - Attaching to an event.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/07 - Add content to the DOM.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/08 - Call.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/09 - Mean of this.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/10 - Effect speeds.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/11 - Custom effects.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/12 - Animate.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/15 - Each.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/16 - Handlebars templates.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/17 - Twitter API.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/19 - An even simpler custom event.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/19 - Custom events.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/19 - Tweets.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/20 - Deferreds 01.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/20 - Deferreds 02.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/21 - Deferreds.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/lesson04day.css",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/lesson04night.css",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/lesson05.css",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/Tutorial/18 - Grep.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/20/index.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/20 - Ajax 01/20contact.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/20 - Ajax 01/index.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/20 - Deferreds 01.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/20 - Deferreds 02.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/20/20.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/20/contact.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/20/about.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/19 - Custom events.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/19 - Tweets.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/19 - An even simpler custom event.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/16 - Handlebars templates.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/17 - Twitter API.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/18 - Grep.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/04 - Listening to events.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/03 - Selecting elements.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/02 - Execution order.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/16 - Handlebarslesson16.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/lesson16.html",
+		"/Users/OpenMinder/Dropbox/Current Programming labs/jQuery/lesson17.html",
+		"/Users/OpenMinder/Web workspace/jQuery/inheritance.html",
+		"/Users/OpenMinder/Web workspace/jQuery/lesson07.html",
+		"/Users/OpenMinder/Web workspace/jQuery/lesson13.html",
+		"/Users/OpenMinder/Web workspace/jQuery/lesson01.html",
+		"/Users/OpenMinder/Web workspace/jQuery/lesson02.html",
+		"/Users/OpenMinder/Web workspace/jQuery/lesson03.html",
+		"/Users/OpenMinder/Web workspace/HTML5/css/styles-flexible.css",
+		"/Users/OpenMinder/Web workspace/HTML5/contact-flexible.html",
+		"/Users/OpenMinder/Web workspace/HTML5/about-flexible.html",
+		"/Users/OpenMinder/Web workspace/HTML5/landscape-flexible.html",
+		"/Users/OpenMinder/Web workspace/HTML5/slider/index.html",
+		"/Users/OpenMinder/Web workspace/HTML5/slider/slider.css",
+		"/Users/OpenMinder/Web workspace/HTML5/test-flexible.html",
+		"/Users/OpenMinder/Web workspace/HTML5/index-flexible.html",
+		"/Users/OpenMinder/Web workspace/HTML5/index.html",
+		"/Users/OpenMinder/Web workspace/HTML5/.project",
+		"/Users/OpenMinder/Eclipse workspace/HTML5/contact-flexible.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"saveAlbumsRating",
+			"listing",
+			"saveAlbumsRating",
+			"click",
+			"star",
+			"allAlbumContainers",
+			"getAlbumsFromArtistUrl",
+			"data-id",
+			"data-",
+			"artistBlockSelector",
+			"console",
+			"updateAlbumRatingDetails",
+			"setAlbumsRatingDetails",
+			"updateAlbumRatingDetails",
+			"albumsContainer",
+			"setAlbumsRatingDetails",
+			"setAlbumsRating",
+			"\n			",
+			"data",
+			"[",
+			"hand",
+			"artistBlock",
+			"artistBlocks",
+			"wrap"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true
+}

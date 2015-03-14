@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>
+		Album Reviewer
+	</title>
+	<link rel="stylesheet" href="css/stylesStatic.css">
+</head>
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<div class="container">
+	<div class="title">
+		Album Reviewer
+	</div>
+
+	<ul id="artistsContainer">
+		<li data-artist-id={{ArtistId}}>
+			<div class="artist" data-id="artist">
+				AC/DC
+			</div>
+			<div class="albumsContainer" data-id="albumsContainer">
+				<div class="album" data-id="album" data-album-id="{{AlbumId}}">
+					<div class="albumTitle">
+						Album: Back in Black
+					</div>
+					<div class="infoContainer">
+						<div class="genre">
+							Genre: <span class="genreValue">Rock</span>
+						</div>
+						<div class="price">
+							Price: <span class="priceValue">9.99</span>
+						</div>
+					</div>
+					<div class="starsContainer" data-id="starsContainer">
+						<img src="images/star-rated.png" />
+						<img src="images/star-rated.png" />
+						<img src="images/star-read.png" />
+						<img src="images/star-off.png" />
+						<img src="images/star-off.png" />
+						<div class="ratingDetails">
+							Ratings: <span class="cantRatings" data-id="cantRatings">99</span>
+							</br>
+							Average: <span class="averageRating" data-id="averageRating">9.99</span>
+						</div>
+					</div>
+				</div>
+				<div class="album" data-id="album" data-album-id="{{AlbumId}}">
+					<div class="albumTitle">
+						Album: Shoot to thrilllllll
+					</div>
+					<div class="infoContainer">
+						<div class="genre">
+							Genre: <span class="genreValue">Rock</span>
+						</div>
+						<div class="price">
+							Price: <span class="priceValue">9.99</span>
+						</div>
+					</div>
+					<div class="starsContainer" data-id="starsContainer">
+						<img src="images/star-rated.png" />
+						<img src="images/star-rated.png" />
+						<img src="images/star-read.png" />
+						<img src="images/star-off.png" />
+						<img src="images/star-off.png" />
+						<div class="ratingDetails">
+							Ratings: <span class="cantRatings" data-id="cantRatings">99</span>
+							</br>
+							Average: <span class="averageRating" data-id="averageRating">9.99</span>
+						</div>
+					</div>
+				</div>
+				<div class="albumError"><div class="albumTitle">Error saving a rating</div></div>
+			</div>
+		</li>
+		<li data-artist-id={{ArtistId}}>
+			<div class="artist" data-id="artist">
+				Led Zeppelin
+			</div>
+		</li>		
+	</ul>
+</div>
+
+</body>
+</html>

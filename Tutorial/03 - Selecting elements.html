@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+
+	<style type="text/css">
+		ul li
+		{
+			color: red;
+		}
+
+		.selected
+		{
+			color: green;
+		}
+	</style>
+
+</head>
+<body>
+
+<div class="container">
+
+	<ul class="selected">
+		<li>Apple</li>
+		<li>Pear</li>
+		<li>Peach</li>
+	</ul>
+
+	<br>
+
+	<ul class="container">
+		<li>Dog</li>
+		<li>Cat</li>
+		<li class="container">Mouse</li>
+	</ul>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: selecting elements from the page
+
+	*/
+
+	$('ul.selected').children('li').first().css('color', 'green');
+	$('ul.selected').children('li').eq(1).next().text('Text edited with jQeury');
+
+	// Takes only the first parent
+	console.log($('li').parent('.container'));
+	// Takes all the elements matching up in the tree
+	console.log($('li').parents('.container'));
+	// Same as parents but includes the same element
+	console.log($('li').closest('.container'));
+
+</script>
+
+</body>
+</html>

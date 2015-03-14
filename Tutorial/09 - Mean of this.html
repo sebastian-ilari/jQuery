@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+
+
+	</style>
+</head>
+<body>
+
+<a href="http://www.google.com">Gooooooogle</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: different ways to redefine what this means
+
+	*/
+
+var obj = {
+	doIt: function(e) {
+		e.preventDefault();
+		console.log(this);
+	}
+}
+
+var anotherObj = {
+	doIt: function(e) {
+		console.log(this);
+	}
+}
+
+function doSomething(e) {
+	e.preventDefault();
+	console.log(this);
+}
+
+//$('a').on('click', doSomething);
+
+//$('a').on('click', obj.doIt);
+
+// $('a').on('click', function(e) {
+// 	anotherObj.doIt();
+// 	e.preventDefault();
+// });
+
+$('a').on('click', $.proxy(obj.doIt, obj));
+
+</script>
+</body>
+</html>

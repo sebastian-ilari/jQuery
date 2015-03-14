@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+		ul li
+		{
+			color: red;
+		}
+
+		.selected
+		{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+
+<ul>
+	<li>Apple</li>
+	<li>Pear</li>
+	<li>Peach</li>
+</ul>
+
+<script src="js/jquery-1.10.2.js"></script>
+
+<script type="text/javascript">
+	var list = jQuery('ul li');
+	console.log(list);
+
+	$('ul li').addClass('selected');
+
+</script>
+</body>
+</html>

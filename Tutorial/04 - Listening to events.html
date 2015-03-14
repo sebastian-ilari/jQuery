@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<link rel="stylesheet" href="04 - lesson04day.css">
+</head>
+<body>
+
+<h1>Test website</h1>
+
+<button data-file="day">Day</button>
+<button data-file="night">Night</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: listening to events associated to buttons and changing the css
+
+	Don't use many time commands like $('ul') on the same scope because jQuery has to parse all the DOM, try to 
+	store them in variables instead.
+
+	*/
+
+	(function() {
+		var link = $('link');
+
+		$('button').on('click', (function() {
+			console.log(this);
+			console.log($(this));
+			//$(this).text('jQuery');
+
+			var $this = $(this),
+				time = $(this).data('file');
+
+			link.attr('href', '04 - lesson04' + time + '.css');
+
+			$this
+				.siblings('button')
+					.removeAttr('disabled')
+					.end()
+					.attr('disabled', 'disabled');
+
+/* 			That block means exactly the same as this other one:
+
+			$this.siblings('button').removeAttr('disabled');
+			$this.attr('disabled', 'disabled');
+*/
+		}));
+	})();
+
+</script>
+
+</body>
+</html>

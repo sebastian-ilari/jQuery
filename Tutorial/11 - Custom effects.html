@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<style type="text/css">
+
+	p {
+		margin-top: 0px;
+	}
+
+	</style>
+</head>
+<body>
+
+
+<h1>Click me to flashhhh</h1>
+<div class="content">
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	/*
+	
+	EXPLANATION: creating a custom effect
+
+	*/
+
+(function() {
+	var content = $('div.content').hide();
+
+	jQuery.fn.flash = function(speed, easing, callback) {
+		var $this = $(this);
+
+		return $this.slideDown(speed, function() {
+			$this.delay(easing).slideUp(speed);
+		});
+	};
+
+	$('h1').on('click', function() {
+		content.flash(500, 1000);
+	});
+})();
+
+
+</script>
+</body>
+</html>
